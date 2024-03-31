@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+*{
+ padding: 0px;
+ margin: 0px;
+ box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App{
+ margin: auto;
+ max-width: 800px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* =========input area======== */
+.input_container{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ max-width: 800px;
+ margin-bottom: 20px;
+}
+.app_heading{
+ font-size: 50px;
+ color: white;
+ margin: 20px 0px;
+}
+.input_box{
+ display: flex;
+ align-items: center;
+ width: 100%;
+ padding: 10px;
+ background-color: rgb(73, 71, 71);
+}
+.inputss{
+ display: flex;
+ gap: 20px;
+ width: 100%;
+}
+.inputss p{
+ color: white;
+ font-size: 20px;
+ margin-bottom: 5px;
+}
+.inputss input{
+ padding: 8px;
+ border-radius: 10px;
+}
+.input_box button{
+ color: white;
+ background: orange;
+ border: 1px solid black;
+ padding: 10px 20px;
+ border-radius: 10px;
+ cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* =======list area======= */
+.list_container{
+  padding: 10px;
+  max-width: 800px;
+  margin-bottom: 5px;
+ background-color: rgb(73, 71, 71);
+ }
+.list_box{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+.list_box h1{
+ color: orange;
+}
+.list_box p{
+ color: white;
+}
+.list_box button{
+ background: red;
+ color: white;
+ border: 1px solid black;
+ padding: 8px 20px;
+ border-radius: 10px;
+ cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media(max-width : 500px){
+ .inputss{
+   display: flex;
+   flex-direction: column;
+ }
 }
